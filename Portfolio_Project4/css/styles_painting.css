@@ -56,7 +56,7 @@ MEDIA QUERIES
     
 	.gallery li{
 		float: left;
-		width: 45%;
+		width: 44%;
 		margin-left: 2.4%;
 		margin-right: 2.4%;
 		margin-top: 1em;
@@ -84,7 +84,7 @@ MEDIA QUERIES
 
 @media (min-width: 1200px) {
     	.gallery li{
-		width: 28.3333%;
+		width: 27.3333%;
 		margin-left: 2.4%;
 		margin-right: 2.4%;
 		list-style-type: none;

@@ -1,0 +1,43 @@
+/************************************
+GENERAL STYLES 
+************************************/
+
+* {
+  box-sizing: border-box; 
+}
+
+/************************************
+GALLERY
+************************************/
+
+
+.section_gallery{
+	padding: 3em;
+	background: #BBBEBB;
+	width: 100%;
+	margin: 1em 0;
+}
+
+.gallery{
+	margin: 0;
+	padding: 0;
+}
+
+.content_gallery{
+	padding: 2em;
+	background: white;
+}
+
+.gallery li{
+	width: 100%;
+	list-style-type: none;
+	margin-top: 1em;
+}
+
+.gallery a{
+	text-decoration: none;
+}
+
+.gallery img{
+	width: 100%;
+}

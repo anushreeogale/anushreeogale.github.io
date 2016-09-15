@@ -26,12 +26,14 @@ $overlay.click(function(){
 
 $( document ).on( 'click', function ( e ) {
     if ( $( e.target ).closest( elem ).length === 0 ) {
+        $("#imagesContainer img").css("opacity","1");
         $overlay.hide();
     }
 });
 
 $( document ).on( 'keydown', function ( e ) {
     if ( e.keyCode === 27 ) { // ESC
+        $("#imagesContainer img").css("opacity","1");
         $overlay.hide();
     }
 });

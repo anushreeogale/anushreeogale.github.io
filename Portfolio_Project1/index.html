@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My Pet</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+</head>
+<body>
+
+	<!-- MAIN CONTAINER -->
+	<div class="container">
+	
+			<!-- MAIN HEADER -->
+			<header class="main_header clear">
+				<a href="#" class="site_logo"><img src="images/logo_example1.png" alt="Logo Image" /></a>
+				<ul class="main_menu">
+					<li><a href="#abt">About</a></li>
+					<li><a href="#srv">Services</a></li>
+					<li><a href="#tst">Testimonials</a></li>
+					<li><a href="#gllry">Gallery</a></li>
+					<li><a href="#cnt">Contact</a></li>
+				</ul>
+			</header>
+			
+			<!-- MAIN CONTENT -->
+			<div class="main_content" id="abt">
+			
+				<!-- SECTION ONE: ABOUT -->
+				<div class="section_about clear">
+					<div class="content_about clear">
+						<h2>ABOUT</h2>
+						<div class="image_about">
+							<img src="images/image_about.jpg" alt="about image" />
+						</div>
+						<div class="about_para">
+							<p>Lorem ipsum dolor sit amet, has aliquid fuisset erroribus id, his no 
+							summo equidem propriae. Mel apeirian efficiendi et, aliquid sanctus adolescens at usu, 
+							mel ut vide tollit hendrerit. Qui no erant fuisset, cum possim sanctus convenire et, 
+							eos te adhuc dolorum. Omnesque fabellas vel at, admodum reprehendunt ut duo. Eros timeam 
+							singulis mei id, ei pro viris qualisque. Maiorum efficiendi in qui. Noster sapientem sit ad, 
+							debitis evertitur conclusionemque pri et, odio abhorreant ullamcorper ex sit. 
+							Adhuc nonumes sed id. No vim vitae deseruisse argumentum, te error tamquam mel. </br></br>
+							Modus qualisque intellegat an vis. Ex causae corpora euripidis sit. Quo quis patrioque at. 
+							At est feugait patrioque interesset, his quando nemore at. Pro dicam invenire id, 
+							id vix oportere accusamus intellegat. Qui an hinc paulo fabulas, blandit indoctum mel eu. 
+							Eum pertinacia dissentias id. Ludus graeci comprehensam id sed, eum euripidis interesset in. 
+							Assum saepe duo ne. An omnesque eleifend inimicus cum, soleat nusquam nam ne. 
+							Adhuc fuisset at est, ut ludus recusabo euripidis est, eu nulla alterum maiestatis sed. 
+							Odio scribentur sit cu, probo deleniti est eu. Impetus tacimates et pro, ei eros movet his, 
+							his velit oratio reprehendunt te.</p>
+						</div>
+					</div><!-- END OF CONTENT_ABOUT -->
+					<div id="srv"></div>
+				</div><!-- END OF SECTION_ABOUT -->
+				
+				<!-- SECTION TWO: SERVICES -->
+				<div class="section_services clear">
+					<div class="content_serv clear">
+					<div class="services_menu">
+						<h2 class="heading_services_up">SERVICES</h2>
+						<ul class="services">
+							<li id="li_tabs1" onclick="tabs('tabs1')"><a><img src="images/services_1.jpg" alt="" onmouseover="this.src='images/services_1_hover.jpg';" onmouseout="this.src='images/services_1.jpg';"/></a></li>
+		
+							<p class="services_para_small">Lorem ipsum dolor sit amet, has aliquid fuisset erroribus id, his no 
+							summo equidem propriae. Mel apeirian efficiendi et, aliquid sanctus adolescens at usu, 
+							mel ut vide tollit hendrerit. Qui no erant fuisset, cum possim sanctus convenire et, 
+							eos te adhuc dolorum. Omnesque fabellas vel at, admodum reprehendunt ut duo. Eros timeam 
+							singulis mei id, ei pro viris qualisque. Maiorum efficiendi in qui. Noster sapientem sit ad, 
+							debitis evertitur conclusionemque pri et, odio abhorreant ullamcorper ex sit. 
+							Adhuc nonumes sed id. No vim vitae deseruisse argumentum, te error tamquam mel.</p>
+							
+							<li id="li_tabs2" onclick="tabs('tabs2')"><a><img src="images/services_2.jpg" alt="" onmouseover="this.src='images/services_2_hover.jpg';" onmouseout="this.src='images/services_2.jpg';"/></a></li>
+							
+							<p class="services_para_small">Adhuc nonumes sed id. No vim vitae deseruisse argumentum, te error tamquam mel. </br></br>
+							Modus qualisque intellegat an vis. Ex causae corpora euripidis sit. Quo quis patrioque at. 
+							At est feugait patrioque interesset, his quando nemore at. Pro dicam invenire id, 
+							id vix oportere accusamus intellegat. Qui an hinc paulo fabulas, blandit indoctum mel eu. 
+							Eum pertinacia dissentias id. Ludus graeci comprehensam id sed, eum euripidis interesset in. 
+							Assum saepe duo ne.</p>
+							
+							<li id="li_tabs3" onclick="tabs('tabs3')"><a><img src="images/services_3.jpg" alt="" onmouseover="this.src='images/services_3_hover.jpg';" onmouseout="this.src='images/services_3.jpg';"/></a></li>
+							
+							<p class="services_para_small">Assum saepe duo ne. An omnesque eleifend inimicus cum, soleat nusquam nam ne. 
+							Adhuc fuisset at est, ut ludus recusabo euripidis est, eu nulla alterum maiestatis sed. 
+							Odio scribentur sit cu, probo deleniti est eu. Impetus tacimates et pro, ei eros movet his, 
+							his velit oratio reprehendunt te.</p>
+							
+							<li id="li_tabs4" onclick="tabs('tabs4')"><a><img src="images/services_4.jpg" alt="" onmouseover="this.src='images/services_4_hover.jpg';" onmouseout="this.src='images/services_4.jpg';"/></a></li>
+							
+							<p class="services_para_small">Ex causae corpora euripidis sit. Quo quis patrioque at. 
+							At est feugait patrioque interesset, his quando nemore at. Pro dicam invenire id, 
+							id vix oportere accusamus intellegat. Qui an hinc paulo fabulas, blandit indoctum mel eu. 
+							Eum pertinacia dissentias id. Ludus graeci comprehensam id sed, eum euripidis interesset in. 
+							Assum saepe duo ne.</p>
+							
+							<li id="li_tabs5" onclick="tabs('tabs5')"><a><img src="images/services_5.jpg" alt="" onmouseover="this.src='images/services_5_hover.jpg';" onmouseout="this.src='images/services_5.jpg';"/></a></li>
+							
+							<p class="services_para_small">Qui no erant fuisset, cum possim sanctus convenire et, 
+							eos te adhuc dolorum. Omnesque fabellas vel at, admodum reprehendunt ut duo. Eros timeam 
+							singulis mei id, ei pro viris qualisque. Maiorum efficiendi in qui. Noster sapientem sit ad, 
+							debitis evertitur conclusionemque pri et, odio abhorreant ullamcorper ex sit. 
+							Adhuc nonumes sed id. No vim vitae deseruisse argumentum, te error tamquam mel.</p>
+						</ul>
+					</div>
+					
+					<div class="content_services clear">
+					
+						<div id="tabs1">
+							<h3>DOG WALKING</h3>
+							<div class="image_services">
+								<img src="images/dog_walking.jpeg" alt="services image" />
+							</div>
+							<div class="services_para">
+								<p>Lorem ipsum dolor sit amet, has aliquid fuisset erroribus id, his no 
+							summo equidem propriae. Mel apeirian efficiendi et, aliquid sanctus adolescens at usu, 
+							mel ut vide tollit hendrerit. Qui no erant fuisset, cum possim sanctus convenire et, 
+							eos te adhuc dolorum. Omnesque fabellas vel at, admodum reprehendunt ut duo. Eros timeam 
+							singulis mei id, ei pro viris qualisque.</p>
+							</div>
+						</div>
+						
+						<div id="tabs2">
+							<h3>CAT SITTING</h3>
+							<div class="image_services">
+								<img src="images/cat_sitting.jpeg" alt="services image" />
+							</div>
+							<div class="services_para">
+								<p>Assum saepe duo ne. An omnesque eleifend inimicus cum, soleat nusquam nam ne. 
+							Adhuc fuisset at est, ut ludus recusabo euripidis est, eu nulla alterum maiestatis sed. 
+							Odio scribentur sit cu, probo deleniti est eu. Impetus tacimates et pro, ei eros movet his, 
+							his velit oratio reprehendunt te.</p>
+							</div>
+						</div>
+						
+						<div id="tabs3">
+							<h3>CAGED PET/FISH CARE</h3>
+							<div class="image_services">
+								<img src="images/caged_pet.jpeg" alt="services image" />
+							</div>
+							
+							<div class="services_para">
+								<p>Qui no erant fuisset, cum possim sanctus convenire et, 
+							eos te adhuc dolorum. Omnesque fabellas vel at, admodum reprehendunt ut duo. Eros timeam 
+							singulis mei id, ei pro viris qualisque. Maiorum efficiendi in qui. Noster sapientem sit ad, 
+							debitis evertitur conclusionemque pri et, odio abhorreant ullamcorper ex sit.</p>
+							</div>
+						</div>
+						
+						<div id="tabs4">
+							<h3>OVERNIGHT CARE</h3>
+							<div class="image_services">
+								<img src="images/overnight.jpeg" alt="services image" />
+							</div>
+							
+							<div class="services_para">
+								<p>Mel apeirian efficiendi et, aliquid sanctus adolescens at usu, 
+							mel ut vide tollit hendrerit. Qui no erant fuisset, cum possim sanctus convenire et, 
+							eos te adhuc dolorum. Omnesque fabellas vel at, admodum reprehendunt ut duo. Eros timeam 
+							singulis mei id, ei pro viris qualisque.</p>
+							</div>
+						</div>
+						
+						<div id="tabs5">
+							<h3>SPECIAL SERVICES</h3>
+							<div class="image_services">
+								<img src="images/special_services.jpeg" alt="services image" />
+							</div>
+							
+							<div class="services_para">
+								<p>Ex causae corpora euripidis sit. Quo quis patrioque at. 
+							At est feugait patrioque interesset, his quando nemore at. Pro dicam invenire id, 
+							id vix oportere accusamus intellegat. Qui an hinc paulo fabulas, blandit indoctum mel eu. 
+							Eum pertinacia dissentias id. Ludus graeci comprehensam id sed, eum euripidis interesset in. 
+							Assum saepe duo ne.</p>
+							</div>
+						</div>
+					</div><!-- END OF CONTENT_SERVICES -->
+					</div><!-- END OF CONTENT_SERV -->
+					<div id="tst"></div>
+				</div><!-- END OF SECTION_SERVICES -->
+				
+				<!-- SECTION THREE: TESTIMONIALS -->
+				<div class="section_testimonials clear">
+				<div class="content_test clear">
+					<div class="testimonials_menu clear">
+						<h2 class="heading_testimonials_up">TESTIMONIALS</h2>
+						<ul class="testimonials">
+							<li id="li_tab1" onclick="tab('tab1')"><a>BINGO</a></li>
+		
+							<p class="testimonials_para_small">No vim vitae deseruisse argumentum, te error tamquam mel. </br></br>
+							Modus qualisque intellegat an vis. Ex causae corpora euripidis sit. Quo quis patrioque at. 
+							At est feugait patrioque interesset, his quando nemore at. Pro dicam invenire id, 
+							id vix oportere accusamus intellegat. Qui an hinc paulo fabulas, blandit indoctum mel eu. 
+							Eum pertinacia dissentias id.</p>
+							
+							<li id="li_tab2" onclick="tab('tab2')"><a>KITTY</a></li>
+							
+							<p class="testimonials_para_small">At est feugait patrioque interesset, his quando nemore at. Pro dicam invenire id, 
+							id vix oportere accusamus intellegat. Qui an hinc paulo fabulas, blandit indoctum mel eu. 
+							Eum pertinacia dissentias id. Ludus graeci comprehensam id sed, eum euripidis interesset in. 
+							Assum saepe duo ne. An omnesque eleifend inimicus cum, soleat nusquam nam ne. 
+							Adhuc fuisset at est, ut ludus recusabo euripidis est, eu nulla alterum maiestatis sed. 
+							Odio scribentur sit cu, probo deleniti est eu. Impetus tacimates et pro, ei eros movet his, 
+							his velit oratio reprehendunt te.</p>
+							
+							<li id="li_tab3" onclick="tab('tab3')"><a>MAX</a></li>
+							
+							<p class="testimonials_para_small">Qui an hinc paulo fabulas, blandit indoctum mel eu. 
+							Eum pertinacia dissentias id. Ludus graeci comprehensam id sed, eum euripidis interesset in. 
+							Assum saepe duo ne. An omnesque eleifend inimicus cum, soleat nusquam nam ne. 
+							Adhuc fuisset at est, ut ludus recusabo euripidis est, eu nulla alterum maiestatis sed. 
+							Odio scribentur sit cu, probo deleniti est eu. Impetus tacimates et pro, ei eros movet his, 
+							his velit oratio reprehendunt te.</p>
+						</ul>
+					</div><!-- END OF TESTIMONIALS_MENU -->
+						
+						<div id="content_testimonials clear">
+							
+							<div id="tab1">
+								<div class="image_testimonials">
+									<img src="images/t_bingo.jpeg" alt="testimonials image" />
+								</div>
+								<div class="testimonials_para">
+									<p>Ludus graeci comprehensam id sed, eum euripidis interesset in. 
+							Assum saepe duo ne. An omnesque eleifend inimicus cum, soleat nusquam nam ne. 
+							Adhuc fuisset at est, ut ludus recusabo euripidis est, eu nulla alterum maiestatis sed. 
+							Odio scribentur sit cu, probo deleniti est eu.</p>
+								</div>
+							</div><!-- END OF TAB1 -->
+							
+							<div id="tab2">
+								<div class="image_testimonials">
+									<img src="images/t_kitty.jpg" alt="testimonials image" />
+								</div>
+								<div class="testimonials_para">
+									<p>Mel apeirian efficiendi et, aliquid sanctus adolescens at usu, 
+							mel ut vide tollit hendrerit. Qui no erant fuisset, cum possim sanctus convenire et, 
+							eos te adhuc dolorum. Omnesque fabellas vel at, admodum reprehendunt ut duo. Eros timeam 
+							singulis mei id, ei pro viris qualisque.</p>
+								</div>
+							</div><!-- END OF TAB2 -->
+							
+							<div id="tab3">
+								<div class="image_testimonials">
+									<img src="images/t_max.jpg" alt="testimonials image" />
+								</div>
+								<div class="testimonials_para">
+									<p>Adhuc nonumes sed id. No vim vitae deseruisse argumentum, te error tamquam mel. </br></br>
+							Modus qualisque intellegat an vis. Ex causae corpora euripidis sit. Quo quis patrioque at. 
+							At est feugait patrioque interesset, his quando nemore at. Pro dicam invenire id, 
+							id vix oportere accusamus intellegat. Qui an hinc paulo fabulas, blandit indoctum mel eu. 
+							Eum pertinacia dissentias id.</p>
+								</div>
+							</div><!-- END OF TAB3 -->
+							
+						</div><!-- END OF CONTENT_TESTIMONIALS -->
+						</div><!-- END OF CINTENT_TEST -->
+						<div id="gllry"></div>
+				</div><!-- END OF SECTION_TESTIMONIALS -->
+				
+				<!-- SECTION FOUR: GALLERY -->
+				<div class="section_gallery clear">
+					<div class="content_gallery clear">
+						<h2>GALLERY</h2>
+						<ul class="gallery">
+							<li><a href="#"><img src="images/g_dog1.jpg" alt="Gallery Image"/></a></li>
+							<li><a href="#"><img src="images/g_dog2.jpg" alt="Gallery Image"/></a></li>
+							<li><a href="#"><img src="images/g_dog3.jpg" alt="Gallery Image"/></a></li>
+							<li><a href="#"><img src="images/g_dog4.jpg" alt="Gallery Image"/></a></li>
+							<li><a href="#"><img src="images/g_cat1.jpg" alt="Gallery Image"/></a></li>
+							<li><a href="#"><img src="images/g_cat2.jpg" alt="Gallery Image"/></a></li>
+							<li><a href="#"><img src="images/g_cat3.jpg" alt="Gallery Image"/></a></li>
+							<li><a href="#"><img src="images/g_cat4.jpg" alt="Gallery Image"/></a></li>
+							<li><a href="#"><img src="images/g_rabbit1.jpg" alt="Gallery Image"/></a></li>
+							<li><a href="#"><img src="images/g_bird1.jpg" alt="Gallery Image"/></a></li>
+							<li><a href="#"><img src="images/g_bird2.jpg" alt="Gallery Image"/></a></li>
+							<li><a href="#"><img src="images/g_fish1.jpg" alt="Gallery Image"/></a></li>
+						</ul>
+					</div><!-- END OF CONTENT_GALLERY -->
+					<div id="cnt"></div>
+				</div><!-- END OF SECTION_GALLERY -->
+				
+				<!-- SECTION FIVE: CONTACT -->
+				<div class="section_contact clear">
+					<div class="content_contact clear">
+						<h2>CONTACT</h2>
+						<div class="info">
+							<h3>PET CARE</h3>
+							<p>1234 Sample St.
+							Austin, TX</p>
+							<p>To make an appointment or any queries, call us at</p>
+							<p class="blue">123-456-7890</p>
+							<p>Or e-mail us at</p>
+							<p class="blue underline"><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">example@petcare.com</a></p>
+						</div>
+						<div id=map>
+							
+						</div>
+						
+					</div><!-- END OF CONTENT_GALLERY -->
+				</div><!-- END OF SECTION_GALLERY -->
+				
+					
+		</div><!-- END OF MAIN CONTENT -->
+	</div><!--END OF MAIN CONTAINER -->
+	
+	<script src="js/example1.js" type="text/javascript"></script>
+	
+</body>
+</html>

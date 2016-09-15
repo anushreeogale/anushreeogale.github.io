@@ -58,21 +58,3 @@ $(window).resize(function() {
 		   document.getElementById('tabs1').style.display = 'block';
 	   }
 });
-
-function initialize() {
-    var mapCanvas = document.getElementById('map');
-    var mapOptions = {
-      center: new google.maps.LatLng(30.267153, -97.743061),
-      zoom: 8,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
-    var map = new google.maps.Map(mapCanvas, mapOptions)
-  }
-  google.maps.event.addDomListener(window, 'load', initialize);
-  
-  $('a').click(function(){
-	    $('html, body').animate({
-	        scrollTop: $( $(this).attr('href') ).offset().top
-	    }, 500);
-	    return false;
-	});

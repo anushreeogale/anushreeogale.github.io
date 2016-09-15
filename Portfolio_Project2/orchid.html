@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Orchid</title>
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="js/slick-master/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="js/slick-master/slick/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<header class="clearfix">
+			<img src="images/logo.png" alt="logo image" class="logo"/>
+			<nav>
+				<ul class="main_nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aster.html">Lookbook</a></li>
+					<li><a href="#">Video</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="lookbook_header">
+			<div class="fNav">
+				<h2>Flowers</h2>
+				<img src="images/downarrow.png" alt="Down Arrow" class="dnArw"/>
+				<img src="images/uparrow.png" alt="Down Arrow" class="upArw"/>
+			</div>
+			<div class="vNav">
+				<ul class="flowerMenu">
+					<li><a href="aster.html">Aster</a></li>
+					<li><a href="daisy.html">Daisy</a></li>
+					<li><a href="hibiscus.html">Hibiscus</a></li>
+					<li><a href="lily.html">Lily</a></li>
+					<li><a href="rose.html">Rose</a></li>
+					<li><a href="tulip.html">Tulip</a></li>
+					<li><a href="marigold.html">Marigold</a></li>
+					<li><a href="lotus.html">Lotus</a></li>
+					<li class="selected"><a href="orchid.html">Orchid</a></li>
+				</ul>
+			</div>
+			<div class="hNav">
+				<ul class="flowerMenu">
+					<li><a href="aster.html">Aster</a></li>
+					<li><a href="daisy.html">Daisy</a></li>
+					<li><a href="hibiscus.html">Hibiscus</a></li>
+					<li><a href="lily.html">Lily</a></li>
+					<li><a href="rose.html">Rose</a></li>
+					<li><a href="tulip.html">Tulip</a></li>
+					<li><a href="marigold.html">Marigold</a></li>
+					<li><a href="lotus.html">Lotus</a></li>
+					<li class="selected"><a href="orchid.html">Orchid</a></li>
+				</ul>
+			</div>
+		</div><!-- END OF LOOKBOOK HEADER -->
+		<div class="flowerName">
+			<h2>Orchid</h2>
+		</div>
+		<div class="slides">
+			<div><img src="images/orchid1.jpg" alt="Orchid Flower" class="bannerImg"/></div>
+			<div><img src="images/orchid2.jpg" alt="Orchid Flower" class="bannerImg"/></div>
+			<div><img src="images/orchid3.jpg" alt="Orchid Flower" class="bannerImg"/></div>
+			<div><img src="images/orchid4.jpg" alt="Orchid Flower" class="bannerImg"/></div>
+			<div><img src="images/orchid5.jpg" alt="Orchid Flower" class="bannerImg"/></div>
+			<div><img src="images/orchid6.jpg" alt="Orchid Flower" class="bannerImg"/></div>
+			<div><img src="images/orchid7.jpg" alt="Orchid Flower" class="bannerImg"/></div>
+			<div><img src="images/orchid8.jpg" alt="Orchid Flower" class="bannerImg"/></div>
+			<div><img src="images/orchid9.jpg" alt="Orchid Flower" class="bannerImg"/></div>
+		</div>
+	</div>
+	<footer>
+		<p>Copyright &copy ExampleFlowers.com</p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/slick-master/slick/slick.min.js"></script>
+	<script>
+		$(".slides").slick({
+			autoplay: true,
+			autoplaySpeed: 2000,
+			fade: true,
+			swipeToSlide: true,
+			mobileFirst: true,
+			pauseOnFocus: false,
+			pauseOnHover: false,
+			initialSlide: 0
+		});
+	</script>
+</body>
+</html>

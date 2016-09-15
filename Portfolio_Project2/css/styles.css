@@ -1,0 +1,694 @@
+/************************************
+GENERAL STYLES 
+************************************/
+
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  color: #797e83;
+  font-size: 1em;
+  margin: 0;
+  font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  background: #fff;
+}
+
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/******************************************************
+HOME
+******************************************************/
+
+
+/************************************
+MAIN CONTAINER
+************************************/
+
+.wrapper{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	min-height: calc(100vh-5em);
+}
+
+
+/************************************
+HEADER
+************************************/
+
+header{
+	padding-top: 1em;
+	margin: auto;
+	background: white;
+}
+
+/************************************
+LOGO
+************************************/
+
+.logo{
+	width: 100px;
+	display: block;
+	margin: auto;
+}
+
+
+/************************************
+NAVIGATION
+************************************/
+
+.main_nav{
+	margin:0;
+	padding:0;
+	margin-top: 0.8em;
+}
+
+.main_nav li{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.main_nav a{
+	display: block;
+	text-align: center;
+	border-bottom: 1px solid #848484;
+	text-decoration: none;
+	margin: 0;
+	font-size: 1.5em;
+	color: #f20f57;
+}
+
+.main_nav a:hover{
+	border-bottom: 2px solid #68bd2f;
+}
+
+
+/************************************
+CONTAINER
+************************************/
+
+.container{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/************************************
+BANNER
+************************************/
+
+.banner{
+	width: 80%;
+	margin: auto;
+	margin-top: 1.5em;
+}
+
+.bannerImg{
+	width: 100%;
+}
+
+/************************************
+SLICK SLIDER
+************************************/
+
+.slick-dots li{
+	display: none;
+}
+
+.slick-dots li button:before{
+	font-size: 10px;
+}
+
+
+/************************************
+HOME GALLERY
+************************************/
+
+.gallery{
+	width: 80%;
+	margin: 0 auto;
+	margin-top:1em;
+	/*margin-bottom: 3em;*/
+}
+
+.imageContainer{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.op{
+	opacity:0.7;
+}
+
+.imageContainer img{
+	width: 100%;
+}
+
+.imageContainer img{
+	padding: 3px 0;
+}
+
+.imageContainer img:hover{
+	opacity:1.0;
+ 	filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.name{
+	display: hidden;
+}
+
+/************************************
+FOOTER
+************************************/
+
+footer{
+	width: 100%;
+	height: 5em;
+	background: #E9E2E5;
+	color: #f20f57;
+	text-align: center;
+}
+
+footer p{
+	padding-top: 30px;
+}
+
+/******************************************************
+LOOKBOOK
+******************************************************/
+
+/************************************
+HEADER
+************************************/
+
+.lookbook_header{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.back a{
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #f20f57;
+	padding: 0.3em 2em;
+	background: pink;
+	background: -webkit-linear-gradient(#fff, #F06994); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff, #F06994); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff, #F06994); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff, #F06994); /* Standard syntax */
+    border-radius: 6px;
+    
+}
+
+.fNav{
+	text-align: center;	
+	cursor: pointer;
+	color: #f20f57;
+    background: #fff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#fff, #f20f57); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff, #f20f57); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff, #f20f57); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff, #f20f57); /* Standard syntax */
+}
+
+.dnArw{
+	display: block;
+	width: 30px;
+	margin: auto;
+	padding-bottom: 8px;
+}
+
+.upArw{
+	display: none;
+	width: 30px;
+	margin: auto;
+	padding-bottom: 8px;
+}
+
+.vNav{
+	display: none;
+	background: orange;
+}
+
+.flowerMenu{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.flowerMenu li{
+	padding: 0px;
+	margin: 0px;
+	background: #fff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#fff, #F06994); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff, #F06994); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff, #F06994); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff, #F06994); /* Standard syntax */
+}
+
+
+.flowerMenu li a{
+	display: block;
+	text-align: center;
+	margin: 2px 0;
+	text-decoration: none;
+	font-size: 1.3em;
+	color: #f20f57;
+	cursor: pointer;
+}
+
+.flowerName{
+	width: 100%;
+	text-align: center;
+}
+
+.flowerName h2{
+	color: #f20f57;
+	font-size: 2em;
+}
+
+.hNav{
+	display: none;
+}
+
+.selected a{
+	font-weight: bold;
+}
+
+/************************************
+LOOKBOOK GALLERY
+************************************/
+
+#imagesContainer{
+	margin-top: 1em;
+}
+
+#lookbookGallery li img{
+	width: 100%;
+	transition: transform 0.5s;
+}
+
+#lookbookGallery li img:hover{
+	transform: scale(1.1);
+}
+
+#lookbookGallery {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#lookbookGallery li{
+	width: 80%;
+	margin: auto;
+	padding: 1.2em 0;
+}
+
+/************************************
+LOOKBOOK DETAILS
+************************************/
+
+.slides{
+	width: 70%;
+	margin: 2em auto;
+}
+
+
+.bannerImg{
+	vertical-align: middle;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-size: 50px;
+    line-height: 1;
+
+    opacity: 1;
+    color: #f20f57;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -70px;
+}
+
+.slick-next
+{
+    right: -40px;
+}
+
+.close{
+	width: 50px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/******************************************************
+VIDEO
+******************************************************/
+
+.videoContainer{
+	width: 80%;
+	margin: auto;
+	padding: 0;
+}
+
+.vid{
+	margin-top: 1em;
+	width: 100%;
+
+}
+
+.vid video{
+	width: 100%;
+}
+
+/******************************************************
+MEDIA QUERIES
+******************************************************/
+
+@media only screen and (min-width : 320px) {
+	body{
+		background: red;
+	}
+	
+	/************************************
+	HOME
+	************************************/
+	
+	/************************************
+	LOOKBOOK
+	************************************/
+	
+	/************************************
+	VIDEO
+	************************************/
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	body{
+		background: green;
+	}
+	
+	/************************************
+	HOME
+	************************************/
+	
+	
+	.photo:hover .imgOverlay{
+		transform: translateY(-13%);
+	}
+	
+	/************************************
+	LOOKBOOK
+	************************************/
+	
+	/*********************
+	LOOKBOOK GALLERY
+	*********************/
+	
+	#lookbookGallery li{
+		float: left;
+		width: 45%;
+		margin: 2.5%;
+	}
+	
+	/************************************
+	VIDEO
+	************************************/
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 650px) {
+	
+	body{
+		background: blue;
+	}
+	
+	/************************************
+	HOME
+	************************************/
+	
+	/*********************
+	LOGO
+	*********************/
+	
+	.logo{
+		display: block;
+		margin: auto;
+		float: left;
+		margin-left: 1em;
+	}
+	
+	/*********************
+	NAVIGATION
+	*********************/
+	
+	.main_nav a{
+		border: none;
+	}
+	
+	.main_nav{
+		float: right;
+	}
+	
+	.main_nav li{
+		float: left;
+		padding: 1em;
+	}
+	
+	/*********************
+	HOME GALLERY
+	*********************/
+	
+	.imageContainer {
+	   /* Prevent vertical gaps */
+	   line-height: 0;
+	   
+	   -webkit-column-count: 2;
+	   -webkit-column-gap:   10px;
+	   -moz-column-count:    2;
+	   -moz-column-gap:      10px;
+	   column-count:         2;
+	   column-gap:           10px;
+	   
+	}
+			
+	.imageContainer img {
+		 /* Just in case there are inline attributes */
+		  width: 100% ;
+		  height: auto ;
+		  padding-top:10px; 
+	}
+	
+	
+	/*********************
+	SLICK SLIDER
+	*********************/
+	
+	.slick-dots li{
+		display: inline-block;
+	}	
+	.slick-dots{
+		bottom: 20px;
+	}
+	
+	.slick-dots li button:before{
+		font-size: 12px;
+		color: black;
+		opacity: 0.7;
+	}
+	
+	.slick-dots li.slick-active button:before{
+		color: white;
+	}
+	
+	
+	/************************************
+	LOOKBOOK
+	************************************/
+	
+	/*********************
+	LOOKBOOK HEADER
+	*********************/
+	
+	.fNav{
+		display: none;
+	}
+	
+	.hNav{
+		display: block;
+	}
+	
+	.vNav{
+		display: none;
+	}
+	
+	.flowerMenu{
+		display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-pack: justify;
+	   	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	    justify-content: space-between;
+	    padding-top: 10px;
+	}
+	
+	.flowerMenu li{
+		background: white;
+	}
+	
+	.flowerMenu li a{
+		margin: 0;
+		padding: 0px;
+		font-size: 1.2em;
+		color: #f20f57;
+		transition: transform 1.2s;
+	}
+	
+	.flowerMenu li a:hover{
+		color: #68bd2f;
+		transform: scale(1.4);
+	}
+	
+	.flowerName{
+		display: none;
+	}
+	
+	/************************************
+	VIDEO
+	************************************/
+		
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 850px) {
+	body{
+		background: yellow;
+	}
+	
+	
+	/************************************
+	HOME
+	************************************/
+	
+	/*********************
+	HOME GALLERY
+	*********************/
+	
+	.imageContainer {
+	   /* Prevent vertical gaps */
+		line-height: 0;
+	   
+	   -webkit-column-count: 3;
+	   -webkit-column-gap:   10px;
+	   -moz-column-count:    3;
+	   -moz-column-gap:      10px;
+	   column-count:         3;
+	   column-gap:           10px;
+	   
+	}
+	
+	
+	.photo{
+		margin: 0;
+		margin-left: 4%;
+	}
+	
+	/************************************
+	LOOKBOOK
+	************************************/
+	
+	/*********************
+	LOOKBOOK GALLERY
+	*********************/
+	
+	#lookbookGallery li{
+		float: left;
+		width: 28.33333%;
+		margin: 2.5%;
+	}
+	
+	/*********************
+	LOOKBOOK HEADER
+	*********************/
+	
+	#flowerMenu li{
+		padding: 3px 10px;
+	}
+	
+	/*********************
+	LOOKBOOK DETAIL
+	*********************/
+	
+	.slides{
+		width: 60%;
+	}
+	
+	/************************************
+	VIDEO
+	************************************/
+	
+	.vid{
+		float: left;
+		width: 49.9999999%;
+		padding: 0 6px;
+	}
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	body{
+		background: white;
+	}
+	
+	/************************************
+	HOME
+	************************************/
+	
+	/************************************
+	LOOKBOOK
+	************************************/
+	
+	/*********************
+	LOOKBOOK DETAIL
+	*********************/
+	
+	.slides{
+		width: 50%;
+	}
+	
+	/************************************
+	VIDEO
+	************************************/
+	
+	
+	
+	.vid video{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+

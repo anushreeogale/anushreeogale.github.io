@@ -1,0 +1,389 @@
+/******************************************************
+GENERAL STYLES
+******************************************************/
+
+* {
+  box-sizing: border-box; 
+}
+
+body{
+	background: #7EA003;
+}
+
+.wrapper{
+	width: 400px;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.container{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/******************************************************
+HEADER
+******************************************************/
+
+header{
+	width: 100%;
+}
+
+header ul{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	padding-top: 1em;
+}
+
+header ul li{
+	display: inline-block;
+	list-style-type: none;
+}
+
+header ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 0.6em;
+	border-radius: 6px;
+	color: #465702;
+	font-family: 'Pacifico', cursive;
+	background: #B5C96D;
+	background: -webkit-linear-gradient(#DCEE94, #556A01); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#DCEE94, #556A01); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#DCEE94, #556A01); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#DCEE94, #556A01); /* Standard syntax */
+    text-shadow: 1.2px 1.2px #343333;
+    margin-top: 1em;
+}
+
+
+h3{
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	color: #465702;
+	text-shadow: 1.2px 1.2px #343333;
+}
+
+/******************************************************
+GALLERY SECTION
+******************************************************/
+
+.one,
+.three{
+	width: 100%;
+}
+
+.rowOne{
+	width: 100%;
+	margin: 0;
+}
+
+.rowOne img{
+	width: 100%;
+}
+
+.rowOne{
+		float: left;
+		width: 33.333333333%;
+		padding: 3px 6px;
+}
+
+.up{
+	margin-top: 8em;
+}
+
+.bigRow{
+	width: 100%;
+	height: 0px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0 -6px;
+}
+
+.bigRow img{
+	width: 100%;
+	height: auto;
+}
+
+.picture{
+	position: relative;
+	overflow: hidden;
+}
+
+.overlay {
+	color: #465702;
+	position: absolute;
+	top: 70px;
+	right: 6px;
+	bottom: 0; 
+	left: 6px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	display: flex; /* For centering text inside .photo-overlay */
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(218,238,135, .5);
+	text-align: center;
+	font-size: 0.5em;
+	font-family: 'Pacifico', cursive;
+	text-shadow: 1.2px 1.2px #343333;
+}
+
+.picture .overlay{
+	transition: transform 1s ease-out;
+	transform: translateY(100%);
+}
+
+.picture:hover .overlay{
+	transform: translateX(0);
+}
+
+
+/******************************************************
+CUBE SECTION
+******************************************************/
+
+.cubeContainer{
+	width: 94.999999%;
+	max-width: 200px;
+	/*text-align: center;*/
+	margin: 4em auto 4.5em;
+	box-shadow: 0 18px 40px 5px rgba(0,0,0,.4);
+	perspective: 800px;
+}
+
+
+.cube{
+	transition: transform 2s ease-in-out;
+	width: 200px;
+	height: 200px;
+	transform-style: preserve-3d;	
+	cursor: pointer;
+}
+
+.cube:hover{
+	transform: rotateY(-270deg);
+}
+
+.front,
+.back,
+.left,
+.right{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+}
+
+.front{
+	transform: translateZ(-100px);
+}
+
+.back{
+	transform: translateZ(-100px) rotateY(270deg);
+	transform-origin: center left;
+}
+
+.left{
+	transform: rotateY(-270deg) translateX(100px);
+	transform-origin: top right;
+}
+
+.right{
+	transform: translateZ(100px) rotateY(180deg);
+}
+
+
+/******************************************************
+MEDIA QUERIES
+******************************************************/
+
+@media only screen and (min-width : 320px) {
+	.up{
+		margin-top: 4em;
+	}
+	
+
+@media only screen and (min-width : 480px) {
+	.wrapper{
+		width: 480px;
+	}
+	.overlay {
+		top: 80px;
+		font-size: 0.7em;
+	}
+	header ul li a{
+		margin: 0 1em;
+	}
+}
+	
+	
+
+@media only screen and (min-width : 650px) {
+	.up{
+		margin-top: 3em;
+	}
+	.wrapper{
+		width: 620px;
+	}
+	.overlay {
+		top: 100px;
+		font-size: 0.85em;
+	}
+	header ul li a{
+		margin: 0 2em;
+		padding: 1em;
+	}
+	.cube{
+		width: 150px;
+		height: 150px;
+	}
+	.front{
+		transform: translateZ(-75px);
+	}
+
+	.back{
+		transform: translateZ(-75px) rotateY(270deg);
+		transform-origin: center left;
+	}
+	
+	.left{
+		transform: rotateY(-270deg) translateX(75px);
+		transform-origin: top right;
+	}
+	
+	.right{
+		transform: translateZ(75px) rotateY(180deg);
+	}
+	
+	.cubeContainer{
+		max-width: 150px;
+		margin-left: 2.7em;
+		float: left;
+	}
+	
+
+@media only screen and (min-width : 850px) {
+	.up{
+		margin-top: 2em;
+	}
+	.wrapper{
+		width: 800px;
+	}	
+	.overlay {
+		top: 130px;
+		font-size: 0.95em;
+	}
+	
+	.cube{
+		width: 180px;
+		height: 180px;
+	}
+	.front{
+		transform: translateZ(-90px);
+	}
+
+	.back{
+		transform: translateZ(-90px) rotateY(270deg);
+		transform-origin: center left;
+	}
+	
+	.left{
+		transform: rotateY(-270deg) translateX(90px);
+		transform-origin: top right;
+	}
+	
+	.right{
+		transform: translateZ(90px) rotateY(180deg);
+	}
+	
+	.cubeContainer{
+		max-width: 180px;
+		margin-left: 4em;
+		float: left;
+	}
+	
+	
+
+@media only screen and (min-width : 1200px) {
+	.up{
+		margin-top: 0.5em;
+	}
+	.wrapper{
+		width: 900px;
+	}
+	.overlay {
+		top: 150px;
+		font-size: 1em;
+	}
+	.cube{
+		width: 200px;
+		height: 200px;
+	}
+	.front{
+		transform: translateZ(-100px);
+	}
+
+	.back{
+		transform: translateZ(-100px) rotateY(270deg);
+		transform-origin: center left;
+	}
+	
+	.left{
+		transform: rotateY(-270deg) translateX(100px);
+		transform-origin: top right;
+	}
+	
+	.right{
+		transform: translateZ(100px) rotateY(180deg);
+	}
+	
+	.cubeContainer{
+		max-width: 200px;
+		margin-left: 4.7em;
+		float: left;
+	}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

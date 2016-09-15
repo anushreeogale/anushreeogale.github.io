@@ -1,0 +1,181 @@
+/************************************
+GENERAL STYLES 
+************************************/
+
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  color: #797e83;
+  font-size: 1em;
+  margin: 0;
+  font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  background: white;
+}
+
+
+.wrapper{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	min-height: calc(100vh-5em);
+}
+
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/************************************
+HEADER 
+************************************/
+
+.logo{
+	display: block;
+	margin: auto;
+    text-align: center;
+    padding: 0.5em 0 1.5em 0;
+    color: #556A01;
+}
+
+.main_nav{
+	margin:0;
+	padding:0;
+	margin-top: 0.8em;
+}
+
+.main_nav li{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.main_nav a{
+	display: block;
+	text-align: center;
+	border-bottom: 1px solid #848484;
+	text-decoration: none;
+	margin: 0;
+	font-size: 1.5em;
+	color: #f20f57;
+}
+
+.main_nav a:hover{
+	border-bottom: 2px solid #556A01;
+}
+
+/************************************
+MAIN CONTENT
+************************************/
+
+.container{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#tabs{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	padding-top: 1em;
+}
+
+#tabs li{
+	display: inline-block;
+	list-style-type: none;
+}
+
+#tabs a{
+	text-decoration: none;
+	display: block;
+	padding: 3em 5em;
+	border-radius: 6px;
+	color: white;
+	font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background: #B5C96D;
+	background: -webkit-linear-gradient(#FE2F6D, #556A01); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FE2F6D, #556A01); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FE2F6D, #556A01); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FE2F6D, #556A01); /* Standard syntax */
+    text-shadow: 1.2px 1.2px #343333;
+    margin-top: 1em;
+    transition: all .2s ease-in-out;
+    margin: 1em;
+}
+
+#tabs a:hover { transform: scale(1.1); }
+
+
+#a_photo{
+    display: block;
+    width: 7em;
+    height: auto;
+    border-radius: 50%;
+    padding: 0.5em;
+    margin: auto;
+}
+
+
+/******************************************************
+MEDIA QUERIES
+******************************************************/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 850px) {
+	
+
+	/*********************
+	LOGO
+	*********************/
+	
+	.logo{
+		display: block;
+		margin: auto;
+		float: left;
+		margin-left: 1em;
+	}
+	
+	/*********************
+	NAVIGATION
+	*********************/
+	
+	.main_nav a{
+		border: none;
+	}
+	
+	.main_nav{
+		float: right;
+	}
+	
+	.main_nav li{
+		float: left;
+		padding: 1em;
+	}
+    
+    /*********************
+	MAIN CONTENT
+	*********************/
+    
+    #tabs {
+        padding-top: 4em;
+    }
+    
+    /*********************
+	ABOUT PAGE
+	*********************/
+	
+    #a_photo{
+    display: block;
+    width: 9em;
+    height: auto;
+    border-radius: 50%;
+    margin: auto;
+
+    }
+    
+

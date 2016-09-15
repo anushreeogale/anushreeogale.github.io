@@ -237,7 +237,6 @@ HEADER
 
 .vNav{
 	display: none;
-	background: orange;
 }
 
 .flowerMenu{
@@ -383,29 +382,8 @@ VIDEO
 MEDIA QUERIES
 ******************************************************/
 
-@media only screen and (min-width : 320px) {
-	body{
-		background: red;
-	}
-	
-	/************************************
-	HOME
-	************************************/
-	
-	/************************************
-	LOOKBOOK
-	************************************/
-	
-	/************************************
-	VIDEO
-	************************************/
-}
-
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
-	body{
-		background: green;
-	}
 	
 	/************************************
 	HOME
@@ -438,10 +416,6 @@ MEDIA QUERIES
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 650px) {
-	
-	body{
-		background: blue;
-	}
 	
 	/************************************
 	HOME
@@ -583,10 +557,6 @@ MEDIA QUERIES
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 850px) {
-	body{
-		background: yellow;
-	}
-	
 	
 	/************************************
 	HOME
@@ -659,9 +629,6 @@ MEDIA QUERIES
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-	body{
-		background: white;
-	}
 	
 	/************************************
 	HOME

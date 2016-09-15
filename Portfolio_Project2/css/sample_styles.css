@@ -1,0 +1,19 @@
+#container{
+	width: 300px;
+	margin: 3em auto;
+	text-align: center;
+}
+
+#container img{
+	width: 100%;
+	position: relative;
+}
+
+#container p{
+	padding: 20px;
+	background: black;
+	color: white;
+	opacity: 0.5;
+	position: absolute;
+	bottom: 10px;
+}

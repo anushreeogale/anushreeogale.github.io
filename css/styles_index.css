@@ -10,7 +10,7 @@ body {
   color: #797e83;
   font-size: 1em;
   margin: 0;
-  font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Pacifico', cursive;
   line-height: 1.5;
   background: white;
 }
@@ -40,6 +40,7 @@ HEADER
     text-align: center;
     padding: 0.5em 0 1.5em 0;
     color: #556A01;
+    font-family: 'Pacifico', cursive;
 }
 
 .main_nav{
@@ -82,7 +83,7 @@ MAIN CONTENT
 	text-align: center;
 	margin: 0;
 	padding: 0;
-	padding-top: 1em;
+	/*padding-top: 1em;*/
 }
 
 #tabs li{
@@ -96,14 +97,14 @@ MAIN CONTENT
 	padding: 3em 5em;
 	border-radius: 6px;
 	color: white;
-	font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Pacifico', cursive;
+    font-size: 1.1em;
 	background: #B5C96D;
 	background: -webkit-linear-gradient(#FE2F6D, #556A01); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#FE2F6D, #556A01); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#FE2F6D, #556A01); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#FE2F6D, #556A01); /* Standard syntax */
     text-shadow: 1.2px 1.2px #343333;
-    margin-top: 1em;
     transition: all .2s ease-in-out;
     margin: 1em;
 }
@@ -127,34 +128,26 @@ MEDIA QUERIES
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 850px) {
-	
 
-	/*********************
-	LOGO
-	*********************/
-	
-	.logo{
-		display: block;
-		margin: auto;
-		float: left;
-		margin-left: 1em;
-	}
 	
 	/*********************
 	NAVIGATION
 	*********************/
 	
-	.main_nav a{
-		border: none;
-	}
-	
 	.main_nav{
-		float: right;
+        text-align: center;
 	}
 	
 	.main_nav li{
-		float: left;
-		padding: 1em;
+		display: inline;
+        padding: 1em;
+        text-align: center;
+        margin: 1em;
+	}
+    
+    .main_nav a{
+		border: none;
+        display: inline-block;
 	}
     
     /*********************
@@ -163,6 +156,12 @@ MEDIA QUERIES
     
     #tabs {
         padding-top: 4em;
+    }
+    
+    .main_content{
+        max-width: 600px;
+        width: 600px;
+        margin: auto;
     }
     
     /*********************
@@ -176,6 +175,21 @@ MEDIA QUERIES
     border-radius: 50%;
     margin: auto;
 
+    }
+    
+    
+    /*********************
+	CONTACT PAGE
+	*********************/
+    
+    .contact_details{
+        background: #d3d3d3;
+        width: 50%;
+        margin: 1em auto 0;
+        text-align: center;
+        padding: 1em;
+        border: 2px solid #838383;
+        
     }
     
 

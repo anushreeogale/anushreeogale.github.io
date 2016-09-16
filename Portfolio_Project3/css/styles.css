@@ -57,22 +57,22 @@ header ul li a{
 	padding: 0.6em;
 	border-radius: 6px;
 	color: #465702;
-	font-family: 'Pacifico', cursive;
+	font-family: cursive;
 	background: #B5C96D;
 	background: -webkit-linear-gradient(#DCEE94, #556A01); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#DCEE94, #556A01); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#DCEE94, #556A01); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#DCEE94, #556A01); /* Standard syntax */
-    text-shadow: 1.2px 1.2px #343333;
+    text-shadow: 0.7px 0.7px #343333;
     margin-top: 1em;
 }
 
 
 h3{
 	text-align: center;
-	font-family: 'Pacifico', cursive;
+	font-family: cursive;
 	color: #465702;
-	text-shadow: 1.2px 1.2px #343333;
+	text-shadow: 0.7px 0.7px #343333;
 }
 
 /******************************************************
@@ -138,8 +138,8 @@ GALLERY SECTION
 	background: rgba(218,238,135, .5);
 	text-align: center;
 	font-size: 0.5em;
-	font-family: 'Pacifico', cursive;
-	text-shadow: 1.2px 1.2px #343333;
+	font-family: cursive;
+	text-shadow: 0.7px 0.7px #343333;
 }
 
 .picture .overlay{

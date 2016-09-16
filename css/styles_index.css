@@ -10,7 +10,7 @@ body {
   color: #797e83;
   font-size: 1em;
   margin: 0;
-  font-family: 'Pacifico', cursive;
+  font-family: cursive;
   line-height: 1.5;
   background: white;
 }
@@ -40,7 +40,7 @@ HEADER
     text-align: center;
     padding: 0.5em 0 1.5em 0;
     color: #556A01;
-    font-family: 'Pacifico', cursive;
+    font-family: cursive;
 }
 
 .main_nav{
@@ -94,11 +94,11 @@ MAIN CONTENT
 #tabs a{
 	text-decoration: none;
 	display: block;
-	padding: 3em 5em;
+	padding: 2em 3em;
 	border-radius: 6px;
 	color: white;
-	font-family: 'Pacifico', cursive;
-    font-size: 1.1em;
+	font-family: cursive;
+    font-size: 1.5em;
 	background: #B5C96D;
 	background: -webkit-linear-gradient(#FE2F6D, #556A01); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#FE2F6D, #556A01); /* For Opera 11.1 to 12.0 */

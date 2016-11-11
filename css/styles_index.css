@@ -10,9 +10,9 @@ body {
   color: #797e83;
   font-size: 1em;
   margin: 0;
-  font-family: cursive;
+  font-family: verdana;
   line-height: 1.5;
-  background: white;
+  background: #2D0255;
 }
 
 
@@ -34,13 +34,21 @@ body {
 HEADER 
 ************************************/
 
-.logo{
+
+.logo a{
 	display: block;
 	margin: auto;
     text-align: center;
     padding: 0.5em 0 1.5em 0;
-    color: #556A01;
-    font-family: cursive;
+    font-family: verdana;
+    color: #F1EEF2;
+    text-decoration: none;
+    transition: text-shadow 0.6s;
+}
+
+.logo a:hover{
+	/*border-bottom: 2px solid #556A01;*/
+	text-shadow: 2px 2px 5px #ffffff;
 }
 
 .main_nav{
@@ -58,15 +66,21 @@ HEADER
 .main_nav a{
 	display: block;
 	text-align: center;
-	border-bottom: 1px solid #848484;
+	border-bottom: 1px solid #F1EEF2;
 	text-decoration: none;
 	margin: 0;
 	font-size: 1.5em;
-	color: #f20f57;
+	color: #F1EEF2;
+	transition: text-shadow 0.6s;
+}
+
+hr{
+	display: none;
 }
 
 .main_nav a:hover{
-	border-bottom: 2px solid #556A01;
+	/*border-bottom: 2px solid #556A01;*/
+	text-shadow: 2px 2px 5px #ffffff;
 }
 
 /************************************
@@ -86,39 +100,202 @@ MAIN CONTENT
 	/*padding-top: 1em;*/
 }
 
-#tabs li{
+#tabs div{
 	display: inline-block;
 	list-style-type: none;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	margin: 1em 0 2em 0;
 }
 
 #tabs a{
 	text-decoration: none;
 	display: block;
-	padding: 2em 3em;
-	border-radius: 6px;
+	text-align: left;
+	font-family: verdana;
+	font-size: 1.7em;
 	color: white;
-	font-family: cursive;
-    font-size: 1.5em;
-	background: #B5C96D;
-	background: -webkit-linear-gradient(#FE2F6D, #556A01); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#FE2F6D, #556A01); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#FE2F6D, #556A01); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#FE2F6D, #556A01); /* Standard syntax */
-    text-shadow: 1.2px 1.2px #343333;
-    transition: all .2s ease-in-out;
-    margin: 1em;
 }
 
-#tabs a:hover { transform: scale(1.1); }
+#tabs img{
+	width: 100%;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
 
+.glow{
+	transition: text-shadow 0.6s;
+}
+
+.glow:hover{
+	text-shadow: 2px 2px 5px #ffffff;
+}
+
+
+/************************************
+ABOUT PAGE
+************************************/
 
 #a_photo{
     display: block;
-    width: 7em;
+    width: 12em;
     height: auto;
     border-radius: 50%;
     padding: 0.5em;
     margin: auto;
+}
+
+.info{
+	font-family: verdana;
+	color: #F1EEF2;
+	font-style: italic;
+}
+
+.aboutContent{
+	font-family: verdana;
+	color: #F1EEF2;
+}
+
+.skillsData{
+	display: none;
+}
+
+.skillsDataSmall{
+	width: 90%;
+	margin: auto;
+}
+
+.purple{
+	background: #C585FF;
+}
+
+.white{
+	background: #ffffff;
+}
+
+.smallCircle{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.subHeading{
+	display:none;
+}
+
+.resume{
+	color: #F1EEF2;
+	text-decoration: none;
+	font-style: italic;
+	transition: text-shadow 0.6s;
+}
+
+.resume:hover{
+	text-shadow: 2px 2px 5px #ffffff;
+}
+
+.resumeContainer{
+	width: 70%;
+	margin: auto;
+}
+
+/******************************************************
+DETAILS PAGE
+******************************************************/
+
+.projectImages{
+	width: 90%;
+	margin: auto;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+.projectImages img{
+	width: 100%;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	margin-bottom: 1.5em;
+}
+
+.description{
+	width: 90%;
+	margin: auto;
+}
+
+.description p{
+	color: #F1EEF2;
+	font-family: verdana;
+	font-size: 14px;
+}
+
+.link{
+	width: 60%;
+	margin: auto;
+	text-align: center; 
+	margin-bottom: 20px;
+	background: #8400FF;
+	padding: 10px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+.link a{
+	font-style: italic;
+	color: #F1EEF2;
+	font-size: 18px;
+	transition: text-shadow 0.6s;
+}
+
+.link a:hover{
+	text-shadow: 2px 2px 5px #ffffff;
+}
+
+/******************************************************
+CONTACT PAGE
+******************************************************/
+
+.contactMe{
+	width: 100%;
+	margin: auto;
+	/*background: red;*/
+	background-image: url("../images/contactBackground.jpg");
+	background-repeat: repeat-x;
+	background-size: 100% 100%;
+	opacity: 0.8;
+    filter: alpha(opacity=80);
+    padding: 30px;
+}
+
+.contactHeading{
+	color: #F1EEF2;
+	font-family: "Kalam";
+	font-size: 40px;
+	text-shadow: 4px 4px 4px #aaa;
+}
+
+.contactText{
+	color: #F1EEF2;
+	font-family: "Kalam", serif;
+	font-size: 18px;
+	line-height: 30%;
+	text-shadow: 2px 2px 4px #aaa;
+}
+
+.contactText1{
+	color: #F1EEF2;
+	font-family: "Kalam", serif;
+	font-size: 26px;
+	line-height: 90%;
+	text-shadow: 4px 4px 4px #aaa;
+}
+
+.contactText a{
+	color: #F1EEF2;
 }
 
 
@@ -134,8 +311,15 @@ MEDIA QUERIES
 	NAVIGATION
 	*********************/
 	
+	.logo{
+		margin-top: 6px;
+		float: left;
+	}
+	
 	.main_nav{
-        text-align: center;
+		margin-top: 30px;
+		float: right;
+		margin-right: -36px;
 	}
 	
 	.main_nav li{
@@ -159,22 +343,80 @@ MEDIA QUERIES
     }
     
     .main_content{
-        max-width: 600px;
-        width: 600px;
+    	width: 80%;
         margin: auto;
     }
+    
+    /*********************
+	DETAILS PAGE
+	*********************/
+	
+	hr{
+		display: block;
+	}
+	
+	.description p{
+		font-size: 16px;
+	}
+	
+	.link{
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+	
+	.link a{
+		font-size: 22px;
+	}
     
     /*********************
 	ABOUT PAGE
 	*********************/
 	
+	.aboutContainer{
+		width: 100%;
+		margin: auto;
+	}
+	
     #a_photo{
-    display: block;
-    width: 9em;
-    height: auto;
-    border-radius: 50%;
-    margin: auto;
-
+	    display: block;
+	    width: 17em;
+	    height: auto;
+	    border-radius: 50%;
+	    margin: auto;
+    }
+    
+    .skillsDataSmall{
+    	display: none;
+    }
+    
+    .skillsData{
+		display: block;
+		width: 70%;
+		margin: auto;
+		border-spacing:0; /* Removes the cell spacing via CSS */
+  		border-collapse: collapse;
+	}
+	
+	.skillsData td{
+		white-space:nowrap;
+	}
+	
+	.skillsData .padCell{
+		padding: 0 8px;
+	}
+		
+	.circle{
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+	}
+    
+    .subHeading{
+    	display: block;
+    }
+    
+    .subHeadingSmall{
+    	display: none;
     }
     
     
@@ -182,14 +424,28 @@ MEDIA QUERIES
 	CONTACT PAGE
 	*********************/
     
-    .contact_details{
-        background: #d3d3d3;
-        width: 50%;
-        margin: 1em auto 0;
-        text-align: center;
-        padding: 1em;
-        border: 2px solid #838383;
-        
-    }
+	.contactMe{
+		width: 90%;
+	}
+	
+	.contactHeading{
+		font-size: 52px;
+	}
+	
+	.contactText{
+		color: #F1EEF2;
+		font-family: "Kalam", serif;
+		font-size: 20px;
+		line-height: 30%;
+		text-shadow: 2px 2px 4px #aaa;
+	}
+	
+	.contactText1{
+		color: #F1EEF2;
+		font-family: "Kalam", serif;
+		font-size: 30px;
+		line-height: 90%;
+		text-shadow: 4px 4px 4px #aaa;
+	}
     
 

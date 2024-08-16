@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Anushree Ogale Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles/portfolioStyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css"
+    href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Navigation -->
+
+      <nav>
+        <div id="burger" onclick="openMenu()">
+          <div id="menu"><i class="fa-solid fa-bars"></i></div>
+          <div id="cross"><i class="fa-solid fa-x"></i></div>
+        </div>
+        <ul id="mainNav" class="main_nav">
+          <li class="active"><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#myart">My Art</a></li>
+        </ul>
+      </nav>
+
+      <!-- About Section -->
+
+      <section id="about">
+        <!-- <div class="container"> -->
+        <div class="aboutContainer">
+          <div class="about" id="aboutId">
+            <div class="photoContainer">
+              <!-- <img
+                src="images/anushree.jpg"
+                alt="Anushree Ogale photo"
+                id="a_photo"
+              /> -->
+              <img
+                src="images/anushree3.jpg"
+                alt="Anushree Ogale photo"
+                id="a_photo"
+              />
+            </div>
+
+            <div class="info">
+              <p id="name">Anushree Ogale</p>
+              <p class="infoText">
+                I am a front-end web developer based in Austin, Texas. I love
+                building apps that solve real-world problems, and that are
+                delightful to use.
+                <br />
+                <br />
+                <!-- I have a bachelors degree in Engineering. When I am not working,
+                you will find me in my art room with my colors and my canvas
+                with soothing music in the background. -->
+                My specialities include technologies like HTML5, CSS3,
+                JavaScript, jQuery, AJAX, React, Bootstrap, Wordpress. I also
+                love to try my hand at designing whenever I get a chance.
+              </p>
+              <a href="data/AnushreeOgaleResume.pdf" target="_blank" class="btn"
+                >My Resume</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="skillSec">
+          <div class="knowMe">
+            <p class="skillsHeading">Get to know me more!</p>
+            <p class="skillText">
+              I have a bachelors degree in Engineering. I love playing with
+              colors. When I am not coding, you can find me in my art room with
+              my canvas and paints. I like to keep mayself away from social
+              media, I am only active on LinkedIn. Below is the link to my
+              LinkedIn profile.
+            </p>
+            <p class="linkedinLine">
+              <a
+                href="https://www.linkedin.com/in/creative-anushree"
+                target="_blank"
+                class="btn"
+                >My LinkedIn</a
+              >
+            </p>
+          </div>
+          <div class="skills">
+            <p class="skillsHeading">My Skills</p>
+            <div class="skillSet">
+              <p class="skill gap">HTML</p>
+              <p class="skill gap">CSS</p>
+              <p class="skill gap">JavaScript</p>
+              <p class="skill gap">REACT</p>
+              <p class="skill gap">GIT</p>
+              <p class="skill gap">JQuery Plugins</p>
+              <p class="skill gap">JSON, XML</p>
+              <p class="skill gap">WordPress</p>
+              <p class="skill">Photoshop</p>
+            </div>
+          </div>
+        </div>
+        <!-- end of aboutContainer -->
+        <!-- </div> -->
+        <!-- end of container -->
+      </section>
+      <!-- Projects Section -->
+
+      <section id="projects">
+        <div class="projectsWrapper">
+          <p class="projectsHeading">Projects</p>
+          <div class="projectContainer">
+            <div class="projectImg">
+              <a href="#" target="_blank"
+                ><img src="images/petCareSite.png" alt="Project Image"
+              /></a>
+              <!-- <a href="Portfolio1_details.html"></a> -->
+            </div>
+            <div class="projectDesc">
+              <p class="projectHeading">Pet Care Site</p>
+              <p>
+                This is a site for pet care center. Build with HTML, CSS and
+                vanilla JavaScript. Currently has dummy data and images.
+              </p>
+              <div class="demoBox">
+                <a href="#" target="_blank" class="demo">Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="projectContainer">
+            <div class="projectImg">
+              <a href="#" target="_blank"
+                ><img src="images/musicianSite.jpg" alt="Project Image"
+              /></a>
+            </div>
+            <div class="projectDesc">
+              <p class="projectHeading">Wedding Planner Site</p>
+              <p>
+                This is a website made for wedding planners. Mainly build with
+                HTML, CSS and vanilla JavaScript and JQuery Plugins. Currently
+                has dummy data and images.
+              </p>
+              <div class="demoBox">
+                <a href="#" target="_blank" class="demo">Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="projectContainer">
+            <div class="projectImg">
+              <a href="#" target="_blank"
+                ><img src="images/wildLifeSite.png" alt="Project Image"
+              /></a>
+            </div>
+            <div class="projectDesc">
+              <p class="projectHeading">Sample CSS Animation Work</p>
+              <p class="projectText">
+                This one shows samples of small projects mainly uses CSS
+                animations.
+              </p>
+              <div class="demoBox">
+                <a href="#" target="_blank" class="demo">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of projectsWrapper -->
+      </section>
+
+      <!-- Contact Section -->
+
+      <section id="contact">
+        <!-- <div class="container"> -->
+        <div class="contactMe">
+          <h1 class="contactHeading">Get in Touch</h1>
+          <p class="contactText1">
+            Are you looking for an attractive and user-friendly website to
+            represent your product or business? or looking for any kind of
+            consultation? or want to ask questions? or have some advice for me
+            or just want to say "Hi 👋" in any case feel free to let me know. I
+            will do my best to respond back. 😊 The quickest way to reach out to
+            me is via an email.
+          </p>
+          <div class="contactDetails">
+            <div class="contacts">
+              <i class="fa-solid fa-envelope"></i>
+              <p class="contactText">
+                <a
+                  href="mailto:ogale.anushree@gmail.com?Subject=Hello"
+                  target="_top"
+                  >ogale.anushree@gmail.com</a
+                >
+              </p>
+            </div>
+            <div class="contacts">
+              <i class="fa-solid fa-phone"></i>
+              <p class="contactText">323-449-4436</p>
+            </div>
+            <div class="contacts">
+              <i class="fa-brands fa-linkedin"></i>
+              <p class="contactText">
+                <a href="https://www.linkedin.com/in/anushree-ogale-9406543b"
+                  >Anushree Ogale LinkedIn</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- end of container -->
+      </section>
+
+      <!-- My Art Section -->
+
+      <section id="myart">
+        <div class="artContainer">
+          <p class="myArtHeading">My Art Work</p>
+
+          <section id="imagesContainer">
+            <p class="artSubHeading">Mandala Art</p>
+            <div class="paintingContainer">
+              <div class="paintingColumn">
+                <a href="images/mandala1.jpg" target="_blank"
+                  ><img src="images/mandala1.jpg" class="gridImg"
+                /></a>
+              </div>
+              <div class="paintingColumn">
+                <a href="images/mandala2.jpg" target="_blank"
+                  ><img src="images/mandala2.jpg" class="gridImg"
+                /></a>
+              </div>
+              <div class="paintingColumn comingSoon">
+                <a href="images/mandala2.jpg" target="_blank"
+                  ><img src="images/mandala2.jpg" class="gridImg"
+                /></a>
+              </div>
+            </div>
+            <p class="artSubHeading">Oil Pastel Painting</p>
+            <div class="paintingContainer">
+              <div class="paintingColumn">
+                <a href="images/oilPastel1.jpg" target="_blank"
+                  ><img src="images/oilPastel1.jpg" class="gridImg"
+                /></a>
+              </div>
+              <div class="paintingColumn">
+                <a href="images/oilPastel2.jpg" target="_blank"
+                  ><img src="images/oilPastel2.jpg" class="gridImg"
+                /></a>
+              </div>
+              <div class="paintingColumn comingSoon">
+                <a href="images/oilPastel1.jpg" target="_blank"
+                  ><img src="images/oilPastel1.jpg" class="gridImg"
+                /></a>
+              </div>
+            </div>
+            <p class="artSubHeading">Water Color Painting</p>
+            <div class="paintingContainer">
+              <div class="paintingColumn">
+                <a href="images/waterColor1.jpg" target="_blank"
+                  ><img src="images/waterColor1.jpg" class="gridImg"
+                /></a>
+              </div>
+              <div class="paintingColumn">
+                <a href="images/waterColor2.jpg" target="_blank"
+                  ><img src="images/waterColor2.jpg" class="gridImg"
+                /></a>
+              </div>
+              <div class="paintingColumn">
+                <a href="images/waterColor3.jpg" target="_blank"
+                  ><img src="images/waterColor3.jpg" class="gridImg"
+                /></a>
+              </div>
+            </div>
+            <div class="paintingContainer">
+              <div class="paintingColumn">
+                <a href="images/waterColor4.jpg" target="_blank"
+                  ><img src="images/waterColor4.jpg" class="gridImg"
+                /></a>
+              </div>
+              <div class="paintingColumn comingSoon">
+                <a href="images/waterColor5.jpg" target="_blank"
+                  ><img src="images/waterColor5.jpg" class="gridImg"
+                /></a>
+              </div>
+              <div class="paintingColumn comingSoon">
+                <a href="images/waterColor5.jpg" target="_blank"
+                  ><img src="images/waterColor5.jpg" class="gridImg"
+                /></a>
+              </div>
+            </div>
+            <p class="artSubHeading">Dot Art</p>
+            <div class="paintingContainer">
+              <div class="paintingColumn">
+                <a href="images/dotArt1.jpg" target="_blank"
+                  ><img src="images/dotArt1.jpg" class="gridImg"
+                /></a>
+              </div>
+              <div class="paintingColumn comingSoon">
+                <a href="images/dotArt1.jpg" target="_blank"
+                  ><img src="images/dotArt1.jpg" class="gridImg comingSoon"
+                /></a>
+              </div>
+              <div class="paintingColumn comingSoon">
+                <a href="images/dotArt1.jpg" target="_blank"
+                  ><img src="images/dotArt1.jpg" class="gridImg"
+                /></a>
+              </div>
+            </div>
+            <!-- <div class="row">
+              <div class="column">
+                <a href="images/painting12.jpg" target="_blank"
+                  ><img src="images/painting12.jpg" class="gridImg"
+                /></a>
+                <a href="images/painting11.jpg" target="_blank"
+                  ><img src="images/painting11.jpg" class="gridImg"
+                /></a>
+                <a href="images/painting10.jpg" target="_blank"
+                  ><img src="images/painting10.jpg" class="gridImg"
+                /></a>
+              </div>
+              <div class="column">
+                <a href="images/painting4.jpg" target="_blank"
+                  ><img src="images/painting4.jpg" class="gridImg"
+                /></a>
+                <a href="images/painting1.jpg"
+                  ><img src="images/painting1.jpg" class="gridImg"
+                /></a>
+                <a href="images/painting3.jpg"
+                  ><img src="images/painting3.jpg" class="gridImg"
+                /></a>
+              </div>
+              <div class="column">
+                <a href="images/painting2.jpg"
+                  ><img src="images/painting2.jpg" class="gridImg"
+                /></a>
+                <a href="images/painting8.jpg"
+                  ><img src="images/painting8.jpg" class="gridImg"
+                /></a>
+                <a href="images/painting6.jpg"
+                  ><img src="images/painting6.jpg" class="gridImg"
+                /></a>
+              </div>
+              <div class="column">
+                <a href="images/painting7.jpg"
+                  ><img src="images/painting7.jpg" class="gridImg"
+                /></a>
+                <a href="images/painting9.jpg"
+                  ><img src="images/painting9.jpg" class="gridImg"
+                /></a>
+                <a href="images/painting5.jpg"
+                  ><img src="images/painting5.jpg" class="gridImg"
+                /></a>
+              </div>
+            </div> -->
+          </section>
+          <section id="overlay_container"></section>
+        </div>
+        <!-- end of artContainer -->
+      </section>
+    </div>
+    <!-- end of wrapper -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="scripts/script_portfolio.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/gallery.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,592 @@
+/* GENERAL STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #343b3f;
+  font-size: 1em;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  background: #fff;
+}
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+  min-height: calc(100vh-5em);
+}
+
+section {
+  margin: 0;
+  padding: 0;
+  display: block;
+  z-index: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/**********************END OF GENERAL STYLES ************************/
+
+/* HEADER */
+
+nav {
+  background: #eeefef;
+  display: flex;
+  justify-content: end;
+  padding: 0 10% 1% 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 1px 1px 15px #888888;
+}
+
+.main_nav {
+  margin-top: 30px;
+  transition: max-height 2s;
+  transition: visibility 2s;
+  transition: opacity 2s;
+  /* float: right; */
+  /* margin-right: -36px; */
+}
+
+.main_nav li {
+  display: inline;
+  padding: 1em;
+  text-align: center;
+  margin: 1em;
+  list-style-type: none;
+}
+
+.main_nav a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #343b3f;
+  transition: text-shadow 0.6s;
+  transition: all 0.2s ease-in-out;
+}
+
+.main_nav a:hover {
+  text-shadow: 1px 1px 2px #343b3f;
+}
+
+#mainNav li.active a {
+  text-shadow: 1px 1px 2px #343b3f;
+}
+
+#burger {
+  display: none;
+}
+
+#cross {
+  display: none;
+  font-size: 1.8rem;
+  padding: 10px 0 0 0;
+}
+
+/**********************END OF HEADER STYLES ************************/
+
+/* ABOUT PAGE */
+
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+}
+
+.about {
+  width: 60%;
+  max-width: 1200px;
+  display: flex;
+  padding: 9rem 0 3rem 0;
+  justify-content: center;
+  transition: padding 2s;
+}
+
+#a_photo {
+  display: block;
+  width: 17em;
+  height: auto;
+  margin: auto;
+  box-shadow: 1px 3px 10px #888;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  color: #343b3f;
+  padding: 30px 0 0 60px;
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.infoText {
+  padding-bottom: 30px;
+}
+
+#name {
+  font-size: 2.75rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 25px;
+  background: #dbf2fe;
+  background: #8bd7ff;
+  color: #343b3f;
+  font-style: normal;
+  box-shadow: 1px 3px 10px #888;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.skillSec {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.knowMe {
+  width: 100%;
+  padding: 30px;
+}
+
+.skills {
+  padding: 30px;
+}
+
+.skillsHeading {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.skillText {
+  padding-bottom: 20px;
+}
+
+.skillSet {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill {
+  padding: 10px 20px;
+  background: #eeefef;
+  color: #343b3f;
+  border-radius: 3px;
+}
+
+.skillSet {
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.gap {
+  margin-right: 20px;
+}
+
+.linkedinLine {
+  font-size: 20px;
+}
+
+/* PROJECTS SECTION */
+
+.projectsWrapper {
+  padding: 30px 0;
+  background: #4b4b4b;
+  color: #f7f7f7;
+}
+
+.projectsHeading {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 30px 0 50px 0;
+}
+
+.projectContainer {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  margin-top: 60px;
+  flex-wrap: nowrap;
+  height: 300px;
+}
+
+.projectImg {
+  width: 100%;
+}
+
+.projectImg img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.projectDesc {
+  padding-left: 40px;
+  width: 100%;
+  /* background: blue; */
+}
+
+.projectHeading {
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+.demo {
+  text-decoration: none;
+  padding: 12px 26px;
+  background: #4b4b4b;
+  border: 2px solid #f7f7f7;
+  /* border: 2px solid red; */
+  color: #f7f7f7;
+  border-radius: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.projectText {
+  margin-bottom: 20px;
+}
+
+.demoBox {
+  margin-top: 40px;
+}
+
+/* CONTACT PAGE */
+
+.contactMe {
+  width: 50%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.contactHeading {
+  color: #343b3f;
+  font-size: 30px;
+}
+
+.contactText {
+  color: #343b3f;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.contactText1 {
+  color: #343b3f;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.contactText a {
+  color: #343b3f;
+}
+
+.contactDetails {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+/* MY ART SECTION */
+
+.artContainer {
+  width: 100%;
+  background: #4b4b4b;
+}
+
+.myArtHeading {
+  font-size: 2.6rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #f7f7f7;
+  padding-top: 50px;
+}
+
+.artSubHeading {
+  color: #f7f7f7;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.gridImg {
+  width: 100%;
+  border: 10px solid white;
+}
+
+.paintingContainer {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.paintingColumn {
+  padding: 10px;
+}
+
+.paintingColumn img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  /* height: 100%; */
+}
+
+/* Create four equal columns that sits next to each other */
+/* .paintingColumn {
+  -ms-flex: 25%; /* IE10 
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+} */
+
+#overlay {
+  /*background: rgba(0, 0, 0, 0.7);*/
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+#overlay img {
+  margin-top: 7%;
+  width: 30%;
+  height: auto;
+  padding: 0;
+  border: 20px solid white;
+}
+
+.comingSoon {
+  visibility: hidden;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1590px) {
+  .about {
+    width: 80%;
+  }
+
+  .projectContainer {
+    width: 80%;
+  }
+
+  .projectHeading {
+    margin-top: 0;
+  }
+
+  .projectsHeading {
+    padding: 20px 0;
+  }
+
+  .contactMe {
+    width: 80%;
+  }
+
+  .imageGallery {
+    width: 95%;
+  }
+
+  .paintingContainer {
+    width: 75%;
+  }
+
+  #overlay img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    width: 90%;
+  }
+
+  #a_photo {
+    width: 15rem;
+  }
+
+  .info {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  #name {
+    font-size: 2rem;
+  }
+
+  .skillSec {
+    width: 80%;
+  }
+
+  .projectContainer {
+    width: 90%;
+  }
+
+  .projectHeading {
+    font-size: 1.5rem;
+  }
+
+  .paintingContainer {
+    width: 80%;
+  }
+
+  #overlay img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  nav {
+    padding: 0 10% 1.5% 0;
+  }
+
+  .infoText {
+    padding-bottom: 10px;
+  }
+
+  .skillSec {
+    width: 100%;
+  }
+
+  .projectContainer {
+    width: 70%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .projectDesc {
+    height: auto;
+    padding-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .projectsHeading {
+    padding: 10px 0;
+  }
+
+  .contactDetails {
+    flex-direction: column;
+  }
+
+  .contactMe {
+    padding: 30px 0 0 0;
+  }
+
+  .paintingContainer {
+    width: 85%;
+  }
+
+  #overlay img {
+    margin-top: 10%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  nav {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    background: white;
+    box-shadow: none;
+  }
+  .main_nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    max-height: 30px;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_nav li {
+    padding: 10px 0;
+    margin: 0;
+  }
+  #burger {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    cursor: pointer;
+  }
+
+  #menu {
+    font-size: 1.8rem;
+    padding: 10px 0 0 0;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 5rem 0 3rem 0;
+  }
+
+  .info {
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 0 0;
+    text-align: center;
+  }
+
+  .skillSec {
+    flex-direction: column;
+  }
+
+  .paintingContainer {
+    width: 60%;
+    flex-direction: column;
+  }
+
+  .comingSoon {
+    display: none;
+  }
+
+  #overlay img {
+    margin-top: 20%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .projectHeading {
+    font-size: 1.2rem;
+  }
+
+  .demoBox {
+    margin-top: 30px;
+  }
+
+  #overlay img {
+    margin-top: 25%;
+    width: 70%;
+  }
+}

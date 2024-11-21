@@ -1,0 +1,429 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #c2eaec;
+  background-image: url(../images/musicBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: #0ed0da;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background: #f5f5f5;
+  padding: 100px;
+}
+
+.wrapper {
+  width: 70%;
+  margin: auto;
+}
+
+nav {
+  background: #f5f5f5;
+  padding: 10px 0;
+}
+
+nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #0ed0da;
+  font-weight: bold;
+}
+
+.line {
+  color: #0ed0da;
+}
+
+.hero {
+  height: 400px;
+  background-image: url("../images/musicNotes.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroText {
+  color: #c2eaec;
+  font-size: 3.75rem;
+  text-shadow: 1px 1px 5px #0ed0da;
+  padding: 20px 60px;
+
+  background: rgba(194, 234, 236, 0.3);
+  background: rgba(2, 2, 2, 0.3);
+  /* border: 1px solid #c2eaec; */
+}
+
+/* About */
+
+.about {
+  display: flex;
+  margin-top: 30px;
+  background: #f5f5f5;
+}
+
+.teacherPhoto {
+  width: 100%;
+}
+
+.teacherPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teacherInfo {
+  padding: 0 40px 40px 40px;
+}
+
+.aboutHeading {
+  font-size: 40px;
+}
+
+/*  Classes */
+
+.horizontal {
+  display: none;
+}
+
+.classSec {
+  display: flex;
+  margin-top: 30px;
+  background: #f5f5f5;
+}
+
+.regularClasses {
+  width: 35%;
+  padding: 0 30px 30px 30px;
+}
+
+.regularClasses ul {
+  padding-top: 20px;
+}
+
+.classHeading {
+  font-size: 30px;
+}
+
+.classSubHeading {
+  font-size: 20px;
+}
+
+.events {
+  padding: 0 40px 40px 40px;
+}
+
+.eventDetails {
+  display: flex;
+  align-items: start;
+}
+
+.eventImg {
+  /* width: 250px; */
+  width: 50%;
+}
+
+.eventImg img {
+  width: 100%;
+}
+
+.eventInfo {
+  padding: 0 50px;
+}
+
+.eventInfo p {
+  margin: 0;
+}
+
+/* Testimonials */
+
+.heading {
+  text-align: center;
+  font-size: 36px;
+}
+
+.testimonials {
+  margin-top: 30px;
+  height: 400px;
+  background: #f5f5f5;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  /* display: inline-block;
+  text-align: center;
+  vertical-align: middle; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  width: 2%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#right-arrow {
+  right: 10px;
+}
+
+#left-arrow {
+  left: 20px;
+}
+
+.testimonialText {
+  /* border: 35px solid #0ed0da; */
+  display: inline-block;
+  box-shadow: 5px 5px 15px #0ed0da;
+  padding: 40px 10px 60px 10px;
+  font-style: italic;
+  background: #c2eaec;
+  font-size: 1.1em;
+  width: 70%;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+  -ms-word-break: break-word;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/* Contact */
+.contact {
+  margin-top: 30px;
+  /* height: 400px; */
+  background: #eaeaea;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contactHeading {
+  font-size: 30px;
+}
+
+.socialIcons {
+  font-size: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.address {
+  padding: 30px;
+}
+
+.contactForm {
+  /* border: 2px solid #f5f5f5; */
+  margin-bottom: 50px;
+}
+
+.contactForm input {
+  padding: 10px 20px;
+}
+
+.formEle {
+  display: flex;
+}
+
+.gap {
+  padding: 10px 50px 10px 0;
+}
+
+.red {
+  color: red;
+}
+
+/* input:invalid {
+  box-shadow: 0 0 5px 1px red;
+} */
+
+.btn {
+  margin-top: 30px;
+  padding: 8px 20px;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1em;
+  background: #0ed0da;
+  border: none;
+  border-radius: 3px;
+  color: #f5f5f5;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px #4c4c4c;
+}
+
+.addrHori {
+  display: none;
+}
+
+@media screen and (max-width: 1500px) {
+  .regularClasses {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .heroText {
+    font-size: 3rem;
+  }
+
+  .classSec {
+    flex-direction: column;
+  }
+
+  .regularClasses {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .regularClasses ul {
+    padding: 20px 0;
+  }
+
+  .horizontal {
+    display: block;
+    height: 10px;
+    width: 80%;
+    margin: auto;
+    background: #0ed0da;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .contact {
+    flex-direction: column-reverse;
+  }
+
+  .address {
+    display: none;
+  }
+
+  .addrHori {
+    margin-top: 10px;
+    background: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .addr {
+    text-align: center;
+  }
+
+  .socialIcons {
+    margin-top: 5px;
+  }
+
+  .socialIcons i {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .heroText {
+    font-size: 2.5rem;
+  }
+
+  .eventDetails {
+    flex-direction: column;
+  }
+
+  .eventImg {
+    width: 100%;
+  }
+
+  .eventInfo {
+    padding: 10px 0;
+  }
+
+  .addrHori {
+    text-align: center;
+  }
+
+  .formEle {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    padding: 7px 0;
+    border-bottom: 2px solid #0ed0da;
+  }
+
+  .heroText {
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .line {
+    display: none;
+  }
+}

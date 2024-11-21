@@ -1,0 +1,658 @@
+/************************************
+GENERAL STYLES 
+************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inclusive Sans", sans-serif;
+  background: #eee;
+  scroll-behavior: smooth;
+}
+
+/************************************
+NAVIGATION 
+************************************/
+
+nav {
+  background: #f8f8f8;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 2px 2px 10px #ddd;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+}
+
+nav ul a {
+  text-decoration: none;
+  font-family: "Inclusive Sans", sans-serif;
+  font-size: 1.3em;
+  color: #fe8905;
+  /* color: #91d866;
+  color: #70c140; */
+}
+
+nav ul a li {
+  list-style-type: none;
+  padding: 20px 40px;
+}
+
+/************************************
+ABOUT SECTION 
+************************************/
+
+#heroBanner {
+  background: skyblue;
+  background: #ffa642;
+  max-height: 600px;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  width: 70%;
+  margin: 200px auto 20px;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+  flex-direction: column;
+}
+
+.textContainer p {
+  font-size: 3em;
+  color: #fff;
+}
+
+.contactBtn {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1.3em;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px #e77b01;
+}
+
+#heroBannerImg {
+  width: 100%;
+}
+
+#aboutMe {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+}
+
+.sectionHeading {
+  color: #fe8905;
+  text-decoration: underline;
+  text-align: center;
+}
+
+#aboutMe p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.aboutImg {
+  z-index: -1;
+  position: scroll;
+  top: 0;
+}
+
+/************************************
+SERVICES SECTION 
+************************************/
+
+/* #serviceHeading {
+  text-align: center;
+  color: #fe8905;
+  text-decoration: underline;
+} */
+
+.servicesContainer {
+  width: 70%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  grid-gap: 60px;
+  color: #fff;
+  font-size: 1.2em;
+  /* padding: 40px; */
+}
+
+.service {
+  background: #ffa642;
+  padding: 80px 40px;
+  position: relative;
+  box-shadow: 5px 5px 15px #888;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.service:hover .overlay {
+  height: 30%;
+  opacity: 0.6;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.btn {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #fff;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.upArrow {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.serviceImg {
+  width: 100%;
+  /* height: 100%; */
+}
+
+/************************************
+TESTIMONIALS SECTION 
+************************************/
+
+#testimonials {
+  margin-top: 110px;
+}
+
+.testimonialsContainer {
+  margin: 50px auto;
+  /* border: 2px solid #ffa642; */
+  width: 50%;
+  box-shadow: 5px 5px 15px #aaa;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 60px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonialImg {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  margin-bottom: 50px;
+  border-radius: 50%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #e77b01;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+  background: #fddbb5;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  background: #e77b01;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-family: "Delius", cursive;
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: grey;
+  font-size: 1.1em;
+}
+
+#gallery {
+  margin: 100px 0;
+}
+
+.galleryHeading {
+  text-align: center;
+  font-family: "Delius", cursive;
+}
+
+/* .galleryContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  overflow: hidden;
+  background: #ffa642;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+.galleryImg {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.2s;
+} */
+
+/* .galleryImg:hover {
+  transform: scale(1.1);
+} */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.clients {
+  overflow: hidden;
+  padding: 40px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+  margin-top: 50px;
+}
+
+.clients:hover .clients-slide {
+  animation-play-state: paused;
+}
+
+.clients-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.clients-slide img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 20px;
+}
+
+/************************************
+CONTACT SECTION
+************************************/
+
+/* Contact */
+.contact {
+  width: 50%;
+  margin: 30px auto 100px;
+  /* background: #eaeaea; */
+  background: #ffa642;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px 0px;
+  box-shadow: 5px 5px 15px #888;
+  position: relative;
+}
+
+.contactHeading {
+  font-size: 30px;
+}
+
+.socialIcons {
+  font-size: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.address {
+  padding: 30px;
+}
+
+.contactForm {
+  /* border: 2px solid #f5f5f5; */
+  margin-bottom: 50px;
+}
+
+.formInput {
+  padding: 10px 20px 10px 5px;
+  border: none;
+  width: 200px;
+}
+
+.formEle {
+  display: flex;
+}
+
+.gap {
+  padding: 10px 40px 10px 0;
+}
+
+/* input:invalid {
+    box-shadow: 0 0 5px 1px red;
+  } */
+
+.btn1 {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1.1em;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #ffa642;
+  margin-top: 40px;
+  box-shadow: 2px 2px 10px #e77b01;
+}
+
+.addrHori {
+  display: none;
+}
+
+/* #contactOverlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .contactOverlay p {
+  font-size: 3em;
+} */
+
+#message {
+  margin-top: 30px;
+  display: none;
+}
+
+/************************************
+FOOTER
+************************************/
+
+footer {
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  padding: 25px 0;
+}
+
+/************************************
+MEDIA QUERIES
+************************************/
+
+/* Extra small devices (phones, 600px and down) */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+  body {
+    background: olive;
+  }
+  nav ul {
+    justify-content: center;
+    padding: 0;
+  }
+  nav ul a li {
+    padding: 20px;
+  }
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (max-width: 1530px) {
+  .textContainer p {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+
+  #aboutMe {
+    width: 60%;
+  }
+
+  .servicesContainer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .service {
+    padding: 60px 40px 80px;
+  }
+
+  .testimonialsContainer {
+    width: 70%;
+  }
+
+  .contact {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .textContainer p {
+    font-size: 2rem;
+  }
+
+  #aboutMe {
+    width: 70%;
+  }
+
+  .servicesContainer {
+    width: 90%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1024px) {
+  .textContainer p {
+    font-size: 1.5rem;
+  }
+  .contactBtn {
+    font-size: 1rem;
+  }
+
+  #aboutMe {
+    width: 90%;
+  }
+
+  .testimonialsContainer {
+    width: 80%;
+  }
+
+  .contact {
+    width: 95%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  nav ul a li {
+    padding: 20px 30px;
+  }
+
+  #heroBanner {
+    width: 90%;
+    margin: 200px auto 20px;
+  }
+
+  .servicesContainer {
+    width: 70%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .contact {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .addrHori {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .address {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul {
+    justify-content: center;
+    padding: 0;
+  }
+  nav ul a li {
+    padding: 20px;
+  }
+
+  .textContainer {
+    padding: 40px 0;
+  }
+
+  #heroBanner {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #aboutMe {
+    width: 95%;
+  }
+
+  .servicesContainer {
+    width: 90%;
+  }
+
+  .testimonialsContainer {
+    width: 90%;
+  }
+
+  .formEle {
+    flex-direction: column;
+  }
+
+  .gap {
+    padding: 10px 0;
+  }
+}

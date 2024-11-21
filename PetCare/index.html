@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dog Walker Site</title>
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles/petCareStyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius&family=Inclusive+Sans:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius&family=Edu+QLD+Beginner:wght@400..700&family=Inclusive+Sans:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+      <nav>
+        <ul>
+          <a href="#about"><li>About</li></a>
+          <a href="#services"><li>Services</li></a>
+          <a href="#testimonials"><li>Testimonials</li></a>
+          <a href="#contact"><li>Contact</li></a>
+        </ul>
+      </nav>
+      <section id="about">
+        <div id="heroBanner">
+          <div class="textContainer">
+            <p>
+              Hi! I'm Ashley, <br />an expert dog walker<br />based in
+              downtown<br />
+              Austin
+            </p>
+            <a href="#contact" class="contactBtn">Contact Me</a>
+          </div>
+          <img src="./images/dogHug.jpg" alt="dog image" id="heroBannerImg" />
+        </div>
+        <div id="aboutMe">
+          <h2 class="sectionHeading" id="services">ABOUT ME</h2>
+          <p>
+            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+		<!-- <span id="services"></span> -->
+      </section>
+	 
+      <section class="services">
+        <h2 class="sectionHeading">SERVICES</h2>
+        <div class="servicesContainer">
+          <div class="service">
+            <div class="border">
+              <p>DOG WALKING</p>
+              <hr />
+              <p>
+                Ged do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua cupidatat non proident.
+              </p>
+            </div>
+            <i class="fa-solid fa-angle-up upArrow"></i>
+            <div class="overlay">
+              <div class="text"><a href="#" class="btn">Book Now</a></div>
+            </div>
+          </div>
+          <div class="service">
+            <div class="border">
+              <p>PUPPY CARE</p>
+              <hr />
+              <p>
+                Suis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </p>
+            </div>
+            <i class="fa-solid fa-angle-up upArrow"></i>
+            <div class="overlay">
+              <div class="text"><a href="#" class="btn">Book Now</a></div>
+            </div>
+          </div>
+          <div class="service">
+            <div class="border">
+              <p>VACATION SITTING</p>
+              <hr />
+              <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui anim id est laborum.
+              </p>
+            </div>
+            <i class="fa-solid fa-angle-up upArrow"></i>
+            <div class="overlay">
+              <div class="text"><a href="#" class="btn">Book Now</a></div>
+            </div>
+          </div>
+          <div class="service">
+            <div class="border">
+              <p>DOG TRAINING</p>
+              <hr />
+              <p>
+                Aliquip ex ea commodo consequat voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+            <i class="fa-solid fa-angle-up upArrow"></i>
+            <div class="overlay">
+              <div class="text"><a href="#" class="btn">Book Now</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials">
+        <h2 class="sectionHeading">TESTIMONIALS</h2>
+        <div class="testimonialsContainer">
+          <div class="slideshow-container">
+            <div class="mySlides">
+              <img
+                src="./images/john.jpg"
+                alt="testimonial dog image"
+                class="testimonialImg"
+              />
+              <q
+                >Felis imperdiet proin fermentum leo vel orci porta non. Eu
+                facilisis sed odio morbi quis commodo odio aenean sed. Tortor
+                consequat id porta nibh venenatis cras sed felis eget.</q
+              >
+              <p class="author">- John Doe</p>
+            </div>
+
+            <div class="mySlides">
+              <img
+                src="./images/Rose.jpg"
+                alt="testimonial dog image"
+                class="testimonialImg"
+              />
+              <q
+                >Tristique senectus et netus et malesuada fames ac turpis
+                egestas. Pharetra massa massa ultricies mi quis.</q
+              >
+              <p class="author">- Rose Taylor</p>
+            </div>
+
+            <div class="mySlides">
+              <img
+                src="./images/jane.jpg"
+                alt="testimonial dog image"
+                class="testimonialImg"
+              />
+              <q
+                >Ornare massa eget egestas purus viverra accumsan. Tellus
+                elementum sagittis vitae et leo duis ut. Sit amet nulla facilisi
+                morbi tempus iaculis.</q
+              >
+              <p class="author">- Jane Smith</p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          </div>
+
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+      </section>
+      <section id="gallery">
+        <h2 class="galleryHeading">Some Happy Clients</h2>
+
+        <div class="clients">
+          <div class="clients-slide">
+            <img src="./images/happy1.jpg" class="galleryImg" />
+            <img src="./images/dog1.jpg" class="galleryImg" />
+            <img src="./images/happy2.jpg" class="galleryImg" />
+            <img src="./images/dog2.jpg" class="galleryImg" />
+            <img src="./images/happy3.jpg" class="galleryImg" />
+            <img src="./images/dog3.jpg" class="galleryImg" />
+            <img src="./images/happy4.jpg" class="galleryImg" />
+            <img src="./images/dog4.jpg" class="galleryImg" />
+          </div>
+        </div>
+
+        <script>
+          var copy = document.querySelector(".clients-slide").cloneNode(true);
+          document.querySelector(".clients").appendChild(copy);
+        </script>
+      </section>
+      <section id="contact">
+
+
+        <!-- <h2 class="sectionHeading">CONTACT</h2> -->
+		<div class="contact">
+			<div class="address">
+			  <p class="contactHeading">Dog Day Care</p>
+			  <address>
+				1234 Sample street,<br />
+				Example, AB 67890<br />
+				USA<br />
+				123-456-7890 | dogdaycare@mysite.com
+			  </address>
+        </div>
+
+        <div class="addrHori">
+          <div class="addr">
+            <hr>
+            <p class="contactHeading">Dog Day Care</p>
+            <address>
+            1234 Sample street,
+            Example, AB 67890
+            USA<br>
+            123-456-7890 | dogdaycare@mysite.com
+            </address>
+          </div>
+
+			  <div class="socialIcons">
+				<i class="fa-brands fa-square-facebook"></i>
+				<i class="fa-brands fa-square-twitter"></i>
+				<i class="fa-brands fa-square-instagram"></i>
+			  </div>
+			</div>
+	
+			<div class="contactForm">
+			  <p class="contactHeading">Contact Us:</p>
+			  <form>
+				<div class="formEle">
+				  <div class="gap">
+					<!-- <label for="fname">First name: </label><br /> -->
+					<input type="text" id="fname" name="fname" placeholder="First Name" class="formInput"/>
+				  </div>
+				  <div class="gap">
+					<!-- <label for="lname">Last name: </label><br /> -->
+					<input type="text" id="lname" name="lname" placeholder="Last Name" class="formInput"/>
+				  </div>
+				</div>
+				<div class="formEle">
+				  <div class="gap">
+					<!-- <label for="email">Email: </label><br /> -->
+					<input type="email" id="email" name="email" placeholder="email@example.com" class="formInput"/>
+				  </div>
+				  <div class="gap">
+					<!-- <label for="phone">Phone: </label><br /> -->
+					<input type="tel" id="phone" name="phone" placeholder="123-456-7890" class="formInput"/>
+				  </div>
+				</div>
+				<div>
+				  <!-- <input type="submit" value="Submit" class="btn1" onclick="on()"/> -->
+				  <button type="button" class="btn1" onclick="showMsg()">Submit</button>
+				</div>
+			  </form>
+			  <p id="message">Thanks for contacting us!</p>
+			</div>
+		<!-- <div class="addrHori">
+			<div class="contactHeading">DOG DAY CARE</div>
+			<div class="addr">
+			  <address>
+				1234 Sample street,<br />
+				Example, AB 67890<br />
+				USA<br />
+				123-456-7890 | dogdaycare@mysite.com
+			  </address>
+			</div>
+			<div class="socialIcons">
+			  <i class="fa-brands fa-square-facebook"></i>
+			  <i class="fa-brands fa-square-twitter"></i>
+			  <i class="fa-brands fa-square-instagram"></i>
+			</div>
+		  </div> -->
+
+		</div>
+
+		</section>
+		</div>
+
+        <!-- <div class="contactContainer">
+          <div class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="form">
+			<form>
+				<input type="text">
+			</form>
+		  </div>
+        </div> -->
+
+      <footer>
+        <p>&copy; Dog Walking by Ashley. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>
